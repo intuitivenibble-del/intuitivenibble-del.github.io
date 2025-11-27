@@ -1,4 +1,4 @@
-Intuitive Nibble
+# Intuitive Nibble
 
 ## Table of Contents
 
