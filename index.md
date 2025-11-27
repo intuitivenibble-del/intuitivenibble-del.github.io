@@ -1,7 +1,6 @@
 # intuitivenibble-del
 
 # Terms of Service
-# Terms of Service
 
 **Last Updated:** November 27, 2024  
 **Effective Date:** November 27, 2024
