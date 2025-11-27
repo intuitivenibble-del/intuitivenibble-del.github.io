@@ -1,4 +1,4 @@
-intuitivenibble-del
+Intuitive Nibble
 
 ## Table of Contents
 
