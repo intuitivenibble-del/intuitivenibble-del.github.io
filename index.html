@@ -9,13 +9,81 @@
 <body>
     <header>
         <div class="header-content">
-        <div>
-            <h1>Nibble</h1>
-            <p class="subtitle">Empowering your wellness choices! ✨</p>
+        <!-- Logo Section -->
+        <div class="header-logo">
+            <div class="logo-icon">🍽️</div>
+            <div class="logo-text">
+                <h1>Nibble</h1>
+                <p class="tagline">Empowering wellness</p>
+            </div>
         </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="header-nav">
+            <button class="nav-link active" onclick="showSection('home')">
+                <span class="nav-icon">🏠</span>
+                Home
+            </button>
+            <button class="nav-link" onclick="showSection('terms')">
+                <span class="nav-icon">📄</span>
+                Terms
+            </button>
+            <button class="nav-link" onclick="showSection('privacy')">
+                <span class="nav-icon">🔒</span>
+                Privacy
+            </button>
+            <button class="nav-link" onclick="showSection('contact')">
+                <span class="nav-icon">✉️</span>
+                Contact
+            </button>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="header-actions">
+            <button class="btn-secondary" onclick="window.open('https://apps.apple.com', '_blank')">
+                Download App
+            </button>
+            <button class="btn-primary" onclick="alert('Coming soon!')">
+                Sign In
+            </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="nav-link-mobile" onclick="showSection('home'); toggleMobileMenu()">
+            <span class="nav-icon">🏠</span>
+            Home
+        </button>
+        <button class="nav-link-mobile" onclick="showSection('terms'); toggleMobileMenu()">
+            <span class="nav-icon">📄</span>
+            Terms of Service
+        </button>
+        <button class="nav-link-mobile" onclick="showSection('privacy'); toggleMobileMenu()">
+            <span class="nav-icon">🔒</span>
+            Privacy Policy
+        </button>
+        <button class="nav-link-mobile" onclick="showSection('contact'); toggleMobileMenu()">
+            <span class="nav-icon">✉️</span>
+            Contact Us
+        </button>
+        <div class="mobile-menu-divider"></div>
+        <button class="btn-mobile" onclick="window.open('https://apps.apple.com', '_blank')">
+            Download App
+        </button>
+        <button class="btn-mobile primary" onclick="alert('Coming soon!')">
+            Sign In
+        </button>
     </div>
 </header>
-
+ 
     <nav>
         <div class="nav-content">
             <button class="nav-btn active" onclick="showSection('home')">Home</button>
