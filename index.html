@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibble - Terms & Privacy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #10b981;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-light: #f9fafb;
+            --bg-white: #ffffff;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        nav {
+            background: var(--bg-white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            padding: 0.5rem 1.25rem;
+            background: var(--bg-light);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .content-section {
+            background: var(--bg-white);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            display: none;
+            position: relative;
+            z-index: 10;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            color: var(--text-primary);
+            font-size: 1.125rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .warning-box {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid var(--secondary);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: var(--text-primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.875rem; }
+            h2 { font-size: 1.5rem; }
+            .content-section { padding: 1.5rem; }
+            .nav-content { gap: 0.75rem; }
+            .nav-btn { padding: 0.5rem 1rem; font-size: 0.875rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🍽️ Nibble</h1>
+            <p class="subtitle">Your Intuitive Nutrition Companion</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <button class="nav-btn active" onclick="showSection('home')">Home</button>
+            <button class="nav-btn" onclick="showSection('terms')">Terms of Service</button>
+            <button class="nav-btn" onclick="showSection('privacy')">Privacy Policy</button>
+            <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="content-section active">
+            <h2>Welcome to Nibble</h2>
+            <p>Nibble is your intuitive nutrition tracking and wellness application, designed to help you achieve your health goals through mindful eating and personalized insights.</p>
+            
+            <div class="success-box">
+                <strong>📱 Available Now</strong>
+                <p style="margin-bottom: 0;">Download Nibble from the Apple App Store and start your wellness journey today.</p>
+            </div>
+
+            <h3>About Nibble</h3>
+            <p>We provide a comprehensive nutrition tracking experience that includes:</p>
+            <ul>
+                <li><strong>Meal Logging:</strong> Easily track your daily food intake with our intuitive interface</li>
+                <li><strong>Personalized Insights:</strong> Receive tailored recommendations based on your goals</li>
+                <li><strong>Progress Monitoring:</strong> Track your wellness journey over time</li>
+                <li><strong>Food Database:</strong> Access extensive nutritional information with barcode scanning</li>
+                <li><strong>Mindfulness Features:</strong> Reflect on your relationship with food</li>
+            </ul>
+
+            <h3>About Intuitive HB Limited</h3>
+            <div class="contact-info">
+                <p><strong>Company Name:</strong> Intuitive HB Limited</p>
+                <p><strong>Registered Office:</strong> 61 Bridge Street, Kington, HR5 3DJ</p>
+                <p><strong>Country:</strong> United Kingdom</p>
+                <p><strong>Support Email:</strong> <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></p>
+            </div>
+
+            <h3>Legal Information</h3>
+            <p>This website provides the legal documentation required for our Apple App Store presence. Please review our Terms of Service and Privacy Policy to understand how we handle your data and what to expect when using Nibble.</p>
+        </section>
+
+        <!-- PRIVACY POLICY SECTION -->
+        <section id="privacy" class="content-section">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> November 27, 2024 | <strong>Effective Date:</strong> November 27, 2024
+            </div>
+
+            <h2>Privacy Policy</h2>
+
+            <h3 id="pp-1">1. Introduction</h3>
+            <p>This Privacy Policy explains how Intuitive HB Limited ("we," "our," or "us"), a company registered in England and Wales, collects, uses, and protects your personal data when you use our mobile application ("the App").</p>
+            <p>We are committed to protecting your privacy and handling your data in accordance with UK data protection laws, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+
+            <h3 id="pp-2">2. Who We Are (Data Controller)</h3>
+            <div class="contact-info">
+                <p><strong>Data Controller:</strong> Intuitive HB Limited</p>
+                <p><strong>Registered Office:</strong> 61 Bridge Street, Kington, HR5 3DJ</p>
+                <p><strong>Country:</strong> United Kingdom</p>
+                <p><strong>Email:</strong> <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
+                <p style="margin-bottom: 0;"><strong>Data Protection Contact:</strong> <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
+            </div>
+            <div class="info-box">
+                <p style="margin-bottom: 0;"><strong>Note:</strong> We will register with the Information Commissioner's Office (ICO) once we begin processing personal data. Our ICO registration number will be displayed here once obtained.</p>
+            </div>
+
+            <h3 id="pp-3">3. What Information We Collect</h3>
+            <h4>3.1 Account Information</h4>
+            <ul>
+                <li>Name and email address</li>
+                <li>Authentication credentials (encrypted)</li>
+                <li>Account preferences and settings</li>
+            </ul>
+            <h4>3.2 Profile and Health Data</h4>
+            <ul>
+                <li>Age, weight, height, gender</li>
+                <li>Dietary preferences and restrictions</li>
+                <li>Nutrition goals and targets</li>
+                <li>Meal logs and food intake records</li>
+                <li>Wellness reflections and personal notes</li>
+                <li>Body measurements (if voluntarily provided)</li>
+            </ul>
+            <h4>3.3 Technical and Usage Data</h4>
+            <ul>
+                <li>Device type and operating system version</li>
+                <li>App usage patterns and feature interactions</li>
+                <li>Error logs and diagnostic information</li>
+                <li>IP address (automatically collected)</li>
+            </ul>
+            <h4>3.4 Location Data (Optional)</h4>
+            <ul>
+                <li>Approximate location (only if you grant permission)</li>
+                <li>Used solely to find nearby healthy food options</li>
+                <li>Can be disabled at any time in device settings</li>
+            </ul>
+
+            <h3 id="pp-4">4. Legal Basis for Processing</h3>
+            <p>Under UK GDPR, we process your personal data based on:</p>
+            <ul>
+                <li><strong>Consent</strong> - You provide explicit consent when creating an account and using health tracking features</li>
+                <li><strong>Contract</strong> - Processing is necessary to provide the App services you've requested</li>
+                <li><strong>Legitimate Interests</strong> - We process certain data to improve our services, prevent fraud, and ensure security</li>
+            </ul>
+            <p>You may withdraw consent at any time by deleting your account or contacting us.</p>
+
+            <h3 id="pp-5">5. How We Use Your Information</h3>
+            <p>We use your personal data for the following purposes:</p>
+            <ul>
+                <li>Providing and maintaining the App's core functionality</li>
+                <li>Creating and managing your user account</li>
+                <li>Delivering personalized nutrition tracking and recommendations</li>
+                <li>Analyzing usage to improve features and user experience</li>
+                <li>Communicating important updates and service notifications</li>
+                <li>Detecting and preventing fraud, abuse, and security threats</li>
+                <li>Complying with legal obligations</li>
+                <li>Processing subscription payments (via Apple App Store)</li>
+            </ul>
+
+            <h3 id="pp-6">6. Who We Share Your Data With</h3>
+            <div class="warning-box">
+                <strong>🔒 We do NOT sell your personal data.</strong>
+            </div>
+            <p>We only share your data with:</p>
+            <h4>Service Providers</h4>
+            <ul>
+                <li>Firebase (Google) - authentication, cloud storage</li>
+                <li>Apple - authentication and payment processing</li>
+                <li>Cloud hosting providers (data stored in secure servers)</li>
+            </ul>
+            <p>All service providers are bound by data processing agreements compliant with UK GDPR requirements.</p>
+            <h4>Legal Requirements</h4>
+            <p>We may disclose data if required by law, court order, or regulatory authority, or to protect our legal rights and the safety of others.</p>
+
+            <h3 id="pp-7">7. International Data Transfers</h3>
+            <p>Some of our service providers (such as Firebase/Google) may process data outside the United Kingdom. When this occurs, we ensure:</p>
+            <ul>
+                <li>Transfers are to countries with adequate data protection (as recognized by the UK government)</li>
+                <li>Standard Contractual Clauses (SCCs) are in place</li>
+                <li>Appropriate technical and organizational safeguards protect your data</li>
+            </ul>
+
+            <h3 id="pp-8">8. How We Protect Your Data</h3>
+            <p>We implement robust security measures to protect your personal data:</p>
+            <h4>Technical Measures</h4>
+            <ul>
+                <li>AES-256 encryption for sensitive data at rest</li>
+                <li>TLS 1.3 encryption for all data in transit</li>
+                <li>Secure credential storage in iOS Keychain</li>
+                <li>Multi-factor authentication options</li>
+                <li>Regular security audits and vulnerability assessments</li>
+            </ul>
+            <h4>Organizational Measures</h4>
+            <ul>
+                <li>Strict access controls and authentication</li>
+                <li>Staff training on data protection</li>
+                <li>Incident response procedures</li>
+                <li>Regular backups with encrypted storage</li>
+            </ul>
+
+            <h3 id="pp-9">9. Your Data Protection Rights</h3>
+            <p>Under UK GDPR, you have the following rights:</p>
+            <ul>
+                <li><strong>Right to Access</strong> - Request a copy of your personal data</li>
+                <li><strong>Right to Rectification</strong> - Correct inaccurate or incomplete data</li>
+                <li><strong>Right to Erasure</strong> - Request deletion of your data ("right to be forgotten")</li>
+                <li><strong>Right to Restrict Processing</strong> - Limit how we process your data</li>
+                <li><strong>Right to Data Portability</strong> - Receive your data in a structured, machine-readable format</li>
+                <li><strong>Right to Object</strong> - Object to processing based on legitimate interests</li>
+                <li><strong>Right to Withdraw Consent</strong> - Withdraw consent at any time</li>
+                <li><strong>Right to Lodge a Complaint</strong> - Complain to the ICO if you believe your rights have been violated</li>
+            </ul>
+            <p>To exercise these rights, email us at: <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a></p>
+
+            <h3 id="pp-10">10. How Long We Keep Your Data</h3>
+            <p>We retain personal data only as long as necessary:</p>
+            <ul>
+                <li><strong>Active Accounts</strong> - Data retained while your account is active</li>
+                <li><strong>Inactive Accounts</strong> - Data may be deleted after 24 months of inactivity (you'll receive advance notice)</li>
+                <li><strong>Deleted Accounts</strong> - Data permanently deleted within 30 days of deletion request</li>
+                <li><strong>Backup Systems</strong> - Data removed from backups within 90 days</li>
+                <li><strong>Legal Obligations</strong> - Some data may be retained longer if required by law (e.g., financial records for 6 years)</li>
+            </ul>
+
+            <h3 id="pp-11">11. Children's Privacy</h3>
+            <p>The App is not intended for children under 13 years of age. We do not knowingly collect personal data from children under 13.</p>
+            <p>If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately at <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a>. We will promptly delete such information.</p>
+
+            <h3 id="pp-12">12. Cookies and Tracking Technologies</h3>
+            <p>We use the following technologies:</p>
+            <h4>Essential Technologies</h4>
+            <ul>
+                <li>Authentication cookies (to maintain your login session)</li>
+                <li>Local storage (for app preferences and settings)</li>
+            </ul>
+            <h4>Analytics</h4>
+            <ul>
+                <li>Crash reporting (to identify and fix bugs)</li>
+            </ul>
+            <p>We do not use cookies or trackers for advertising or marketing purposes.</p>
+
+            <h3 id="pp-13">13. Automated Decision-Making</h3>
+            <p>The App uses algorithms to provide personalized nutrition recommendations and insights. These are suggestions only and do not constitute medical advice or diagnosis. You are always free to ignore recommendations.</p>
+
+            <h3 id="pp-14">14. Changes to This Privacy Policy</h3>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Material changes will be notified at least 30 days in advance through prominent notice in the App or email notification.</p>
+
+            <h3 id="pp-15">15. Contact Us and Complaints</h3>
+            <div class="contact-info">
+                <p><strong>For privacy questions or to exercise your rights:</strong></p>
+                <p>Email: <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a></p>
+                <p>Data Protection Contact: <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
+                <p><strong>Mail:</strong><br>
+                Intuitive HB Limited Privacy Team<br>
+                61 Bridge Street, Kington, HR5 3DJ<br>
+                United Kingdom</p>
+            </div>
+            <div class="info-box">
+                <p><strong>To lodge a complaint with the ICO:</strong></p>
+                <p>Website: <a href="https://ico.org.uk" target="_blank">https://ico.org.uk</a><br>
+                Phone: 0303 123 1113</p>
+                <p style="margin-bottom: 0;"><strong>Mail:</strong><br>
+                Information Commissioner's Office<br>
+                Wycliffe House, Water Lane<br>
+                Wilmslow, Cheshire<br>
+                SK9 5AF</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <p>We're here to help! If you have any questions, concerns, or feedback about Nibble, please don't hesitate to reach out.</p>
+
+            <h3>Company Information</h3>
+            <div class="contact-info">
+                <p><strong>Company Name:</strong> Intuitive HB Limited</p>
+                <p><strong>Registered Office:</strong> 61 Bridge Street, Kington, HR5 3DJ</p>
+                <p style="margin-bottom: 0;"><strong>Country:</strong> United Kingdom</p>
+            </div>
+
+            <h3>Get in Touch</h3>
+            <div class="contact-info">
+                <p><strong>General Support & Questions:</strong><br>
+                <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></p>
+
+                <p><strong>Legal Matters & Terms:</strong><br>
+                <a href="mailto:intuitive.nibble+legal@gmail.com">intuitive.nibble+legal@gmail.com</a></p>
+
+                <p><strong>Privacy & Data Protection:</strong><br>
+                <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a><br>
+                <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
+            </div>
+
+            <div class="success-box">
+                <strong>⏱️ Response Time</strong>
+                <p style="margin-bottom: 0;">We aim to respond to all inquiries within 5 business days. For urgent matters, please indicate this in your email subject line.</p>
+            </div>
+
+            <h3>Feedback</h3>
+            <p>Your feedback helps us improve Nibble! Whether you have suggestions for new features, have found a bug, or just want to share your experience, we'd love to hear from you.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Intuitive HB Limited</strong></p>
+            <p>61 Bridge Street, Kington, HR5 3DJ, United Kingdom</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">© 2024 Intuitive HB Limited. All rights reserved.</p>
+            <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.7;">
+                Nibble is a trademark of Intuitive HB Limited.<br>
+                This website is provided to comply with Apple App Store requirements.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+
+            // Add active class to clicked button
+            const activeButton = event.target;
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Handle initial load with hash
+        window.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash && document.getElementById(hash)) {
+                const section = document.getElementById(hash).closest('.content-section');
+                if (section) {
+                    showSection(section.id);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+        <!-- TERMS OF SERVICE SECTION -->
+        <section id="terms" class="content-section">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> November 27, 2024 | <strong>Effective Date:</strong> November 27, 2024
+            </div>
+
+            <h2>Terms of Service</h2>
+
+            <h3 id="tos-1">1. Agreement to Terms</h3>
+            <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Intuitive HB Limited, a company registered in England and Wales ("we," "our," or "us").</p>
+            <p>By accessing or using the Nibble mobile application ("the App"), you confirm that you accept these Terms and agree to comply with them. If you do not agree to these Terms, you must not use the App.</p>
+
+            <h3 id="tos-2">2. About Intuitive HB Limited</h3>
+            <div class="contact-info">
+                <p><strong>Company Name:</strong> Intuitive HB Limited</p>
+                <p><strong>Registered Office:</strong> 61 Bridge Street, Kington, HR5 3DJ</p>
+                <p><strong>Country:</strong> United Kingdom</p>
+                <p><strong>Contact Email:</strong> <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></p>
+                <p style="margin-bottom: 0;"><strong>Legal Contact:</strong> <a href="mailto:intuitive.nibble+legal@gmail.com">intuitive.nibble+legal@gmail.com</a></p>
+            </div>
+
+            <h3 id="tos-3">3. Description of Service</h3>
+            <p>Nibble provides a nutrition tracking and wellness application offering:</p>
+            <ul>
+                <li>Meal logging and nutrition tracking</li>
+                <li>Personalized wellness insights and recommendations</li>
+                <li>Goal setting and progress monitoring</li>
+                <li>Food database with barcode scanning capability</li>
+                <li>Reflection and mindfulness features</li>
+                <li>Premium features available via subscription</li>
+            </ul>
+            <p>We reserve the right to modify, suspend, or discontinue any feature or the entire service at any time, with reasonable notice where practicable. We are not liable for any modification, suspension, or discontinuance of the service.</p>
+
+            <h3 id="tos-4">4. Important Medical Disclaimer</h3>
+            <div class="warning-box">
+                <strong>⚠️ THE APP IS NOT MEDICAL ADVICE</strong>
+                <p>Nibble provides nutritional information and tracking tools for general educational and informational purposes only. The App is NOT a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+            <p><strong>You must:</strong></p>
+            <ul>
+                <li>Always consult a qualified healthcare professional before making dietary changes</li>
+                <li>Seek immediate medical attention in case of a medical emergency</li>
+                <li>Never disregard professional medical advice based on App content</li>
+                <li>Inform your doctor if you are using the App to manage a health condition</li>
+            </ul>
+            <p><strong>Limitations:</strong></p>
+            <ul>
+                <li>Nutritional data may not be accurate or suitable for your individual needs</li>
+                <li>The App is not designed for medical diagnosis or treatment planning</li>
+                <li>Users with dietary restrictions, allergies, medical conditions, pregnancy, or eating disorders must seek professional guidance</li>
+            </ul>
+
+            <h3 id="tos-5">5. Eligibility and Account Requirements</h3>
+            <h4>5.1 Age Requirements</h4>
+            <ul>
+                <li>You must be at least 13 years old to use the App</li>
+                <li>Users aged 13-17 should obtain parental consent</li>
+                <li>You must be at least 18 years old to purchase premium subscriptions</li>
+            </ul>
+            <h4>5.2 Account Registration</h4>
+            <ul>
+                <li>You must provide accurate and complete information</li>
+                <li>You may not create multiple accounts for yourself</li>
+                <li>One account per person only</li>
+                <li>You must update your information if it changes</li>
+            </ul>
+            <h4>5.3 Account Security</h4>
+            <ul>
+                <li>You are responsible for maintaining the confidentiality of your password</li>
+                <li>You are responsible for all activities that occur under your account</li>
+                <li>You must notify us immediately of any unauthorized access</li>
+                <li>We are not liable for losses arising from unauthorized account use</li>
+            </ul>
+
+            <h3 id="tos-6">6. Acceptable Use Policy</h3>
+            <p>You agree NOT to use the App to:</p>
+            <h4>Legal Violations</h4>
+            <ul>
+                <li>Violate any applicable laws or regulations</li>
+                <li>Infringe intellectual property rights of others</li>
+                <li>Engage in fraudulent or deceptive practices</li>
+            </ul>
+            <h4>Technical Abuse</h4>
+            <ul>
+                <li>Upload viruses, malware, or malicious code</li>
+                <li>Attempt unauthorized access to our systems</li>
+                <li>Use automated tools to scrape or data mine</li>
+                <li>Interfere with or disrupt the service or servers</li>
+                <li>Reverse engineer, decompile, or disassemble the App</li>
+            </ul>
+
+            <h3 id="tos-7">7. Intellectual Property Rights</h3>
+            <h4>7.1 Our Property</h4>
+            <ul>
+                <li>The App, including all content, features, and functionality, is owned by Intuitive HB Limited</li>
+                <li>Protected by UK and international copyright, trademark, and other intellectual property laws</li>
+                <li>You may not copy, modify, distribute, sell, or create derivative works without our express written permission</li>
+                <li>"Nibble" and our logo are trademarks of Intuitive HB Limited</li>
+            </ul>
+
+            <h3 id="tos-8">8. Premium Subscriptions and Payments</h3>
+            <h4>8.1 Free Features</h4>
+            <p>Basic nutrition tracking is available free of charge. We may modify free features at any time.</p>
+            <h4>8.2 Premium Subscriptions</h4>
+            <ul>
+                <li>Premium features require a paid subscription</li>
+                <li>Subscriptions are processed through Apple's App Store</li>
+                <li>Pricing is displayed in the App and subject to change with 30 days' notice</li>
+                <li>Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date</li>
+            </ul>
+            <h4>8.3 Free Trials</h4>
+            <ul>
+                <li>Premium features may include a free trial period</li>
+                <li>You will be charged automatically when the trial ends unless you cancel</li>
+                <li>Cancel anytime during the trial in your App Store account settings</li>
+                <li>Only one free trial per user</li>
+            </ul>
+
+            <h3 id="tos-9">9. User-Generated Content</h3>
+            <ul>
+                <li>You are solely responsible for any content you create or upload</li>
+                <li>You must have the necessary rights to upload content</li>
+                <li>Do not upload content that violates these Terms or applicable laws</li>
+                <li>We reserve the right to remove content that violates these Terms</li>
+                <li>Report inappropriate content to: <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></li>
+            </ul>
+
+            <h3 id="tos-10">10. Disclaimer of Warranties</h3>
+            <div class="info-box">
+                <p>To the maximum extent permitted by law:</p>
+                <ul>
+                    <li>The App is provided "AS IS" and "AS AVAILABLE" without warranties of any kind</li>
+                    <li>We make no warranties regarding accuracy, reliability, or availability of the service</li>
+                    <li>We do not guarantee that the App will be uninterrupted, secure, or error-free</li>
+                    <li>We do not warrant that nutritional information is accurate or suitable for your needs</li>
+                </ul>
+                <p style="margin-bottom: 0;"><strong>Note:</strong> Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence, or for fraud or fraudulent misrepresentation.</p>
+            </div>
+
+            <h3 id="tos-11">11. Limitation of Liability</h3>
+            <p><strong>We are not liable for:</strong></p>
+            <ul>
+                <li>Any indirect, incidental, special, or consequential damages</li>
+                <li>Loss of profits, revenue, data, or business opportunities</li>
+                <li>Damages arising from use or inability to use the App</li>
+                <li>Health outcomes or adverse effects from following App recommendations</li>
+                <li>Inaccuracies in nutritional information</li>
+            </ul>
+            <p><strong>Maximum Liability:</strong> Our total liability to you is limited to the amount you paid for the service in the 12 months preceding the claim, or £100, whichever is greater.</p>
+
+            <h3 id="tos-12">12. Indemnification</h3>
+            <p>You agree to indemnify, defend, and hold harmless Intuitive HB Limited, its directors, officers, employees, and agents from any claims, liabilities, damages, losses, costs, and expenses arising from:</p>
+            <ul>
+                <li>Your use or misuse of the App</li>
+                <li>Your breach of these Terms</li>
+                <li>Your violation of any law or regulation</li>
+                <li>Content you upload or submit</li>
+            </ul>
+
+            <h3 id="tos-13">13. Governing Law and Jurisdiction</h3>
+            <p>These Terms are governed by and construed in accordance with the laws of England and Wales. The courts of England and Wales have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with these Terms.</p>
+            <p>Before initiating legal proceedings, we encourage you to contact us at <a href="mailto:intuitive.nibble+legal@gmail.com">intuitive.nibble+legal@gmail.com</a> to resolve disputes amicably.</p>
+
+            <h3 id="tos-14">14. Third-Party Services and Links</h3>
+            <p>The App integrates with and may contain links to third-party services:</p>
+            <ul>
+                <li>Firebase (Google) - authentication, storage, analytics</li>
+                <li>Apple Sign-In - authentication</li>
+                <li>Google Sign-In - authentication</li>
+                <li>USDA Food Database - nutritional information</li>
+                <li>Apple App Store - payment processing</li>
+            </ul>
+            <p>We are not responsible for third-party services, content, or privacy practices. Third-party services are governed by their own terms and conditions.</p>
+
+            <h3 id="tos-15">15. Privacy and Data Protection</h3>
+            <p>Your use of the App is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal data. By using the App, you consent to our data practices as described in the Privacy Policy.</p>
+
+            <h3 id="tos-16">16. Changes to These Terms</h3>
+            <p>We may modify these Terms from time to time to reflect changes in our services or business practices, legal requirements, or improvements to clarity.</p>
+            <p>Material changes will be communicated at least 30 days in advance through prominent notice in the App or email notification. Your continued use after changes take effect constitutes acceptance.</p>
+
+            <h3 id="tos-17">17. Termination</h3>
+            <h4>17.1 Termination by You</h4>
+            <p>Delete your account at any time via Settings > Account > Delete Account. Your data will be handled according to our Privacy Policy.</p>
+            <h4>17.2 Termination by Us</h4>
+            <p>We may suspend or terminate your account immediately if you breach these Terms, engage in fraudulent or harmful activity, or if required by law.</p>
+
+            <h3 id="tos-18">18. Contact Information</h3>
+            <div class="contact-info">
+                <p><strong>General Support:</strong> <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></p>
+                <p style="margin-bottom: 0;"><strong>Legal Matters:</strong> <a href="mailto:intuitive.nibble+legal@gmail.com">intuitive.nibble+legal@gmail.com</a></p>
+            </div>
+            <p>We aim to respond to all inquiries within 5 business days.</p>
+
+            <h3 id="tos-19">19. Acknowledgment</h3>
+            <div class="success-box">
+                <strong>BY USING NIBBLE, YOU ACKNOWLEDGE THAT:</strong>
+                <ul>
+                    <li>You have read and understood these Terms of Service</li>
+                    <li>You agree to be legally bound by these Terms</li>
+                    <li>You meet the eligibility requirements</li>
+                    <li>You understand the App is not medical advice</li>
+                    <li style="margin-bottom: 0;">You accept the limitations of liability and disclaimers</li>
+                </ul>
+            </div>
+        </section>
