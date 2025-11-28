@@ -4,246 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nibble - Terms & Privacy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #2563eb;
-            --primary-dark: #1e40af;
-            --secondary: #10b981;
-            --text-primary: #1f2937;
-            --text-secondary: #6b7280;
-            --bg-light: #f9fafb;
-            --bg-white: #ffffff;
-            --border: #e5e7eb;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-light);
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            font-size: 1.125rem;
-            opacity: 0.95;
-            font-weight: 300;
-        }
-
-        nav {
-            background: var(--bg-white);
-            box-shadow: var(--shadow);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 2px solid var(--border);
-        }
-
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .nav-btn {
-            padding: 0.5rem 1.25rem;
-            background: var(--bg-light);
-            border: 2px solid var(--border);
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: var(--text-primary);
-            transition: all 0.2s;
-        }
-
-        .nav-btn:hover {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-            transform: translateY(-1px);
-        }
-
-        .nav-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        .content-section {
-            background: var(--bg-white);
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow);
-            display: none;
-            position: relative;
-            z-index: 10;
-        }
-
-        .content-section.active {
-            display: block;
-            animation: fadeIn 0.3s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 3px solid var(--secondary);
-        }
-
-        h3 {
-            color: var(--text-primary);
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        h4 {
-            color: var(--text-primary);
-            font-size: 1.125rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-        }
-
-        ul, ol {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .info-box {
-            background: #fef3c7;
-            border-left: 4px solid #f59e0b;
-            padding: 1.25rem;
-            margin: 1.5rem 0;
-            border-radius: 6px;
-        }
-
-        .warning-box {
-            background: #fee2e2;
-            border-left: 4px solid #ef4444;
-            padding: 1.25rem;
-            margin: 1.5rem 0;
-            border-radius: 6px;
-        }
-
-        .success-box {
-            background: #d1fae5;
-            border-left: 4px solid var(--secondary);
-            padding: 1.25rem;
-            margin: 1.5rem 0;
-            border-radius: 6px;
-        }
-
-        footer {
-        background: var(--text-primary);
-        color: white;
-        text-align: center;
-        padding: 2rem;
-        margin-top: 4rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .contact-info {
-            background: var(--bg-light);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            word-break: break-word;
-            overflow-wrap: break-word;
-        }
-
-        a {
-            color: var(--primary);
-            text-decoration: none;
-            word-break: break-word;
-            overflow-wrap: break-word;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .last-updated {
-            background: var(--bg-light);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            font-style: italic;
-            color: var(--text-secondary);
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 1.875rem; }
-            h2 { font-size: 1.5rem; }
-            .content-section { padding: 1.5rem; }
-            .nav-content { gap: 0.75rem; }
-            .nav-btn { padding: 0.5rem 1rem; font-size: 0.875rem; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -263,7 +24,9 @@
     </nav>
 
     <main>
-        <!-- HOME SECTION -->
+        <!-- ========================================
+             HOME SECTION - Landing page design
+             ======================================== -->
         <section id="home" class="content-section active">
             <h2>Welcome to Nibble</h2>
             <p>Nibble is your intuitive nutrition tracking and wellness application, designed to help you achieve your health goals through mindful eating and personalized insights.</p>
@@ -294,8 +57,9 @@
             <h3>Legal Information</h3>
             <p>This website provides the legal documentation required for our Apple App Store presence. Please review our Terms of Service and Privacy Policy to understand how we handle your data and what to expect when using Nibble.</p>
         </section>
-
-        <!-- TERMS OF SERVICE SECTION -->
+        <!-- ========================================
+             TERMS OF SERVICE SECTION
+             ======================================== -->
         <section id="terms" class="content-section">
             <div class="last-updated">
                 <strong>Last Updated:</strong> November 27, 2024 | <strong>Effective Date:</strong> November 27, 2024
@@ -500,8 +264,9 @@
                 </ul>
             </div>
         </section>
-
-        <!-- PRIVACY POLICY SECTION -->
+        <!-- ========================================
+             PRIVACY POLICY SECTION
+             ======================================== -->
         <section id="privacy" class="content-section">
             <div class="last-updated">
                 <strong>Last Updated:</strong> November 27, 2024 | <strong>Effective Date:</strong> November 27, 2024
@@ -631,145 +396,110 @@
                 <li><strong>Right to Lodge a Complaint</strong> - Complain to the ICO if you believe your rights have been violated</li>
             </ul>
             <p>To exercise these rights, email us at: <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a></p>
+
             <h3 id="pp-10">10. How Long We Keep Your Data</h3>
-        <p>We retain personal data only as long as necessary:</p>
-        <ul>
-            <li><strong>Active Accounts</strong> - Data retained while your account is active</li>
-            <li><strong>Inactive Accounts</strong> - Data may be deleted after 24 months of inactivity (you'll receive advance notice)</li>
-            <li><strong>Deleted Accounts</strong> - Data permanently deleted within 30 days of deletion request</li>
-            <li><strong>Backup Systems</strong> - Data removed from backups within 90 days</li>
-            <li><strong>Legal Obligations</strong> - Some data may be retained longer if required by law (e.g., financial records for 6 years)</li>
-        </ul>
+            <p>We retain personal data only as long as necessary:</p>
+            <ul>
+                <li><strong>Active Accounts</strong> - Data retained while your account is active</li>
+                <li><strong>Inactive Accounts</strong> - Data may be deleted after 24 months of inactivity (you'll receive advance notice)</li>
+                <li><strong>Deleted Accounts</strong> - Data permanently deleted within 30 days of deletion request</li>
+                <li><strong>Backup Systems</strong> - Data removed from backups within 90 days</li>
+                <li><strong>Legal Obligations</strong> - Some data may be retained longer if required by law (e.g., financial records for 6 years)</li>
+            </ul>
 
-        <h3 id="pp-11">11. Children's Privacy</h3>
-        <p>The App is not intended for children under 13 years of age. We do not knowingly collect personal data from children under 13.</p>
-        <p>If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately at <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a>. We will promptly delete such information.</p>
+            <h3 id="pp-11">11. Children's Privacy</h3>
+            <p>The App is not intended for children under 13 years of age. We do not knowingly collect personal data from children under 13.</p>
+            <p>If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately at <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a>. We will promptly delete such information.</p>
 
-        <h3 id="pp-12">12. Cookies and Tracking Technologies</h3>
-        <p>We use the following technologies:</p>
-        <h4>Essential Technologies</h4>
-        <ul>
-            <li>Authentication cookies (to maintain your login session)</li>
-            <li>Local storage (for app preferences and settings)</li>
-        </ul>
-        <h4>Analytics</h4>
-        <ul>
-            <li>Crash reporting (to identify and fix bugs)</li>
-        </ul>
-        <p>We do not use cookies or trackers for advertising or marketing purposes.</p>
+            <h3 id="pp-12">12. Cookies and Tracking Technologies</h3>
+            <p>We use the following technologies:</p>
+            <h4>Essential Technologies</h4>
+            <ul>
+                <li>Authentication cookies (to maintain your login session)</li>
+                <li>Local storage (for app preferences and settings)</li>
+            </ul>
+            <h4>Analytics</h4>
+            <ul>
+                <li>Crash reporting (to identify and fix bugs)</li>
+            </ul>
+            <p>We do not use cookies or trackers for advertising or marketing purposes.</p>
 
-        <h3 id="pp-13">13. Automated Decision-Making</h3>
-        <p>The App uses algorithms to provide personalized nutrition recommendations and insights. These are suggestions only and do not constitute medical advice or diagnosis. You are always free to ignore recommendations.</p>
+            <h3 id="pp-13">13. Automated Decision-Making</h3>
+            <p>The App uses algorithms to provide personalized nutrition recommendations and insights. These are suggestions only and do not constitute medical advice or diagnosis. You are always free to ignore recommendations.</p>
 
-        <h3 id="pp-14">14. Changes to This Privacy Policy</h3>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Material changes will be notified at least 30 days in advance through prominent notice in the App or email notification.</p>
+            <h3 id="pp-14">14. Changes to This Privacy Policy</h3>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Material changes will be notified at least 30 days in advance through prominent notice in the App or email notification.</p>
 
-        <h3 id="pp-15">15. Contact Us and Complaints</h3>
-        <div class="contact-info">
-            <p><strong>For privacy questions or to exercise your rights:</strong></p>
-            <p>Email: <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a></p>
-            <p>Data Protection Contact: <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
-            <p><strong>Mail:</strong><br>
-            Intuitive HB Limited Privacy Team<br>
-            61 Bridge Street, Kington, HR5 3DJ<br>
-            United Kingdom</p>
+            <h3 id="pp-15">15. Contact Us and Complaints</h3>
+            <div class="contact-info">
+                <p><strong>For privacy questions or to exercise your rights:</strong></p>
+                <p>Email: <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a></p>
+                <p>Data Protection Contact: <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
+                <p><strong>Mail:</strong><br>
+                Intuitive HB Limited Privacy Team<br>
+                61 Bridge Street, Kington, HR5 3DJ<br>
+                United Kingdom</p>
+            </div>
+            <div class="info-box">
+                <p><strong>To lodge a complaint with the ICO:</strong></p>
+                <p>Website: <a href="https://ico.org.uk" target="_blank">https://ico.org.uk</a><br>
+                Phone: 0303 123 1113</p>
+                <p style="margin-bottom: 0;"><strong>Mail:</strong><br>
+                Information Commissioner's Office<br>
+                Wycliffe House, Water Lane<br>
+                Wilmslow, Cheshire<br>
+                SK9 5AF</p>
+            </div>
+        </section>
+        <!-- ========================================
+             CONTACT SECTION
+             ======================================== -->
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <p>We're here to help! If you have any questions, concerns, or feedback about Nibble, please don't hesitate to reach out.</p>
+
+            <h3>Company Information</h3>
+            <div class="contact-info">
+                <p><strong>Company Name:</strong> Intuitive HB Limited</p>
+                <p><strong>Registered Office:</strong> 61 Bridge Street, Kington, HR5 3DJ</p>
+                <p style="margin-bottom: 0;"><strong>Country:</strong> United Kingdom</p>
+            </div>
+
+            <h3>Get in Touch</h3>
+            <div class="contact-info">
+                <p><strong>General Support & Questions:</strong><br>
+                <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></p>
+
+                <p><strong>Legal Matters & Terms:</strong><br>
+                <a href="mailto:intuitive.nibble+legal@gmail.com">intuitive.nibble+legal@gmail.com</a></p>
+
+                <p><strong>Privacy & Data Protection:</strong><br>
+                <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a><br>
+                <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
+            </div>
+
+            <div class="success-box">
+                <strong>⏱️ Response Time</strong>
+                <p style="margin-bottom: 0;">We aim to respond to all inquiries within 5 business days. For urgent matters, please indicate this in your email subject line.</p>
+            </div>
+
+            <h3>Feedback</h3>
+            <p>Your feedback helps us improve Nibble! Whether you have suggestions for new features, have found a bug, or just want to share your experience, we'd love to hear from you.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Intuitive HB Limited</strong></p>
+            <p>61 Bridge Street, Kington, HR5 3DJ, United Kingdom</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">© 2024 Intuitive HB Limited. All rights reserved.</p>
+            <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.7;">
+                This website is provided to comply with Apple App Store requirements.
+            </p>
         </div>
-        <div class="info-box">
-            <p><strong>To lodge a complaint with the ICO:</strong></p>
-            <p>Website: <a href="https://ico.org.uk" target="_blank">https://ico.org.uk</a><br>
-            Phone: 0303 123 1113</p>
-            <p style="margin-bottom: 0;"><strong>Mail:</strong><br>
-            Information Commissioner's Office<br>
-            Wycliffe House, Water Lane<br>
-            Wilmslow, Cheshire<br>
-            SK9 5AF</p>
-        </div>
-    </section>
+    </footer>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="content-section">
-        <h2>Contact Us</h2>
-        <p>We're here to help! If you have any questions, concerns, or feedback about Nibble, please don't hesitate to reach out.</p>
-
-        <h3>Company Information</h3>
-        <div class="contact-info">
-            <p><strong>Company Name:</strong> Intuitive HB Limited</p>
-            <p><strong>Registered Office:</strong> 61 Bridge Street, Kington, HR5 3DJ</p>
-            <p style="margin-bottom: 0;"><strong>Country:</strong> United Kingdom</p>
-        </div>
-
-        <h3>Get in Touch</h3>
-        <div class="contact-info">
-            <p><strong>General Support & Questions:</strong><br>
-            <a href="mailto:intuitive.nibble+support@gmail.com">intuitive.nibble+support@gmail.com</a></p>
-
-            <p><strong>Legal Matters & Terms:</strong><br>
-            <a href="mailto:intuitive.nibble+legal@gmail.com">intuitive.nibble+legal@gmail.com</a></p>
-
-            <p><strong>Privacy & Data Protection:</strong><br>
-            <a href="mailto:intuitive.nibble+privacy@gmail.com">intuitive.nibble+privacy@gmail.com</a><br>
-            <a href="mailto:intuitive.nibble+dataprotection@gmail.com">intuitive.nibble+dataprotection@gmail.com</a></p>
-        </div>
-
-        <div class="success-box">
-            <strong>⏱️ Response Time</strong>
-            <p style="margin-bottom: 0;">We aim to respond to all inquiries within 5 business days. For urgent matters, please indicate this in your email subject line.</p>
-        </div>
-
-        <h3>Feedback</h3>
-        <p>Your feedback helps us improve Nibble! Whether you have suggestions for new features, have found a bug, or just want to share your experience, we'd love to hear from you.</p>
-    </section>
-</main>
-
-<footer>
-    <div class="footer-content">
-        <p><strong>Intuitive HB Limited</strong></p>
-        <p>61 Bridge Street, Kington, HR5 3DJ, United Kingdom</p>
-        <p style="margin-top: 1rem; opacity: 0.8;">© 2024 Intuitive HB Limited. All rights reserved.</p>
-        <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 0.7;">
-            This website is provided to comply with Apple App Store requirements.
-        </p>
-    </div>
-</footer>
-
-<script>
-    function showSection(sectionId) {
-        // Hide all sections
-        const sections = document.querySelectorAll('.content-section');
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-
-        // Remove active class from all buttons
-        const buttons = document.querySelectorAll('.nav-btn');
-        buttons.forEach(btn => {
-            btn.classList.remove('active');
-        });
-
-        // Show selected section
-        const selectedSection = document.getElementById(sectionId);
-        if (selectedSection) {
-            selectedSection.classList.add('active');
-        }
-
-        // Add active class to clicked button
-        const activeButton = event.target;
-        if (activeButton) {
-            activeButton.classList.add('active');
-        }
-
-        // Scroll to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Handle initial load with hash
-    window.addEventListener('DOMContentLoaded', function() {
-        const hash = window.location.hash.substring(1);
-        if (hash && document.getElementById(hash)) {
-            const section = document.getElementById(hash).closest('.content-section');
-            if (section) {
-                showSection(section.id);
-            }
-        }
-    });
-</script>
+    <script src="script.js"></script>
+</body>
+</html>
+```
