@@ -59,7 +59,6 @@ header {
     cursor: pointer;
     transition: transform 0.2s;
     text-align: center;
-    flex: 1;
 }
 
 .header-logo:hover {
@@ -154,7 +153,7 @@ header {
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 5px;
     background: rgba(255, 255, 255, 0.15);
@@ -165,6 +164,7 @@ header {
     transition: all 0.3s;
     position: absolute;
     right: 2rem;
+    z-index: 100;
 }
 
 .mobile-menu-btn span {
