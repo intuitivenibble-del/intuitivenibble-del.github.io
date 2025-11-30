@@ -653,28 +653,76 @@ a:hover {
    ======================================== */
 
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
+    main {
+        padding: 0 1rem 2rem;
     }
     
-    .hero-subtitle {
-        font-size: 1.125rem;
+    .content-section {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
     }
     
     .hero-section {
-        padding: 3rem 1.5rem;
+        padding: 2.5rem 1.25rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .cta-button {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
     }
     
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .feature-description {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+    }
+    
+    .feature-highlight::before {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+        top: 0.75rem;
+        right: 0.75rem;
     }
     
     .how-it-works {
-        padding: 3rem 1.5rem;
+        padding: 2.5rem 1.25rem;
+        margin-bottom: 2rem;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
     }
     
     .steps-container {
@@ -682,12 +730,63 @@ a:hover {
         gap: 2rem;
     }
     
-    .cta-title {
-        font-size: 2rem;
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .step h4 {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .step p {
+        font-size: 0.9375rem;
+        line-height: 1.5;
     }
     
     .cta-section {
-        padding: 3rem 1.5rem;
+        padding: 2.5rem 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-title {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-button-secondary {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9375rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-title {
+        font-size: 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem 1.25rem;
     }
 }
 
