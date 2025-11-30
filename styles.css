@@ -42,11 +42,11 @@ header {
 .header-content {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    position: relative;
 }
 
 /* Logo Section */
@@ -59,6 +59,7 @@ header {
     cursor: pointer;
     transition: transform 0.2s;
     text-align: center;
+    flex: 1;
 }
 
 .header-logo:hover {
@@ -162,6 +163,8 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
+    position: absolute;
+    right: 2rem;
 }
 
 .mobile-menu-btn span {
