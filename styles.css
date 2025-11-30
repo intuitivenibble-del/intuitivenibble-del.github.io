@@ -436,7 +436,7 @@ a:hover {
 .hero-section {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, rgba(233, 70, 245, 0.15) 0%, rgba(139, 63, 245, 0.15) 100%);
+    background: linear-gradient(135deg, rgba(233, 70, 245, 0.15) 0%, rgba(139, 63, 245, 0.3) 100%);
     border-radius: 24px;
     margin-bottom: 4rem;
 }
