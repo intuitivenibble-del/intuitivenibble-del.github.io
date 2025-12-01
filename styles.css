@@ -194,8 +194,7 @@ header {
 /* Mobile Menu */
 .mobile-menu {
     display: none;
-    background: rgba(91, 33, 182, 0.98);
-    backdrop-filter: blur(20px);
+    background: #5b21b6;
     padding: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     animation: slideDown 0.3s ease;
