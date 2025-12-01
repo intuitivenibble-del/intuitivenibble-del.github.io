@@ -194,7 +194,7 @@ header {
 /* Mobile Menu */
 .mobile-menu {
     display: none;
-    background: rgba(139, 63, 245, 0.98);
+    background: rgba(91, 33, 182, 0.98);
     backdrop-filter: blur(20px);
     padding: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
