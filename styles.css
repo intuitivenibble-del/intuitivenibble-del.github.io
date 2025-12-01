@@ -2,19 +2,19 @@
    COMING SOON BANNER - DELETE THIS ENTIRE SECTION WHEN LAUNCHING
    ========================================== */
 .coming-soon-banner {
-    background: linear-gradient(135deg, #E946F5 0%, #8B3FF5 100%);
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
     color: white;
     text-align: center;
     padding: 1.5rem 2rem;
     position: relative;
     z-index: 3000;
-    box-shadow: 0 4px 20px rgba(233, 70, 245, 0.4);
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4);
     animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-    0%, 100% { box-shadow: 0 4px 20px rgba(233, 70, 245, 0.4); }
-    50% { box-shadow: 0 4px 30px rgba(233, 70, 245, 0.6); }
+    0%, 100% { box-shadow: 0 4px 20px rgba(220, 38, 38, 0.4); }
+    50% { box-shadow: 0 4px 30px rgba(220, 38, 38, 0.6); }
 }
 
 .coming-soon-banner h2 {
