@@ -194,7 +194,7 @@ header {
 /* Mobile Menu */
 .mobile-menu {
     display: none;
-    background: #5b21b6;
+    background: #5b21b6 !important;
     padding: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     animation: slideDown 0.3s ease;
@@ -205,6 +205,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0;
+    background: #5b21b6 !important;
 }
 
 @keyframes slideDown {
