@@ -1,3 +1,52 @@
+/* ==========================================
+   COMING SOON BANNER - DELETE THIS ENTIRE SECTION WHEN LAUNCHING
+   ========================================== */
+.coming-soon-banner {
+    background: linear-gradient(135deg, #E946F5 0%, #8B3FF5 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    position: relative;
+    z-index: 3000;
+    box-shadow: 0 4px 20px rgba(233, 70, 245, 0.4);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(233, 70, 245, 0.4); }
+    50% { box-shadow: 0 4px 30px rgba(233, 70, 245, 0.6); }
+}
+
+.coming-soon-banner h2 {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+.coming-soon-banner p {
+    margin: 0;
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 768px) {
+    .coming-soon-banner {
+        padding: 1.25rem 1rem;
+    }
+    
+    .coming-soon-banner h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .coming-soon-banner p {
+        font-size: 0.9375rem;
+    }
+}
+/* ========================================== */
+
 * {
     margin: 0;
     padding: 0;
