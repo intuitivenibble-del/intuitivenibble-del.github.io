@@ -10,9 +10,11 @@ permalink: /terms-of-service/
 
 ## 1. Agreement to Terms
 
-These Terms of Service ("Terms") constitute a legally binding agreement between you and Intuitive HB Limited, a company registered in England and Wales ("we," "our," or "us").
+These Terms of Service ("Terms") constitute a legally binding agreement between you and **Intuitive HB Limited**, a company registered in England and Wales ("we," "our," or "us").
 
 By accessing or using the Nibble mobile application ("the App"), you confirm that you accept these Terms and agree to comply with them. If you do not agree to these Terms, you must not use the App.
+
+These Terms apply to all users, including visitors who access the App without creating an account.
 
 ---
 
@@ -43,20 +45,22 @@ We reserve the right to modify, suspend, or discontinue any feature or the entir
 
 ## 4. Important Medical Disclaimer
 
-**⚠️ THE APP IS NOT MEDICAL ADVICE**
+### THE APP IS NOT MEDICAL ADVICE
 
 Nibble provides nutritional information and tracking tools for general educational and informational purposes only. The App is NOT a substitute for professional medical advice, diagnosis, or treatment.
 
-**You must:**
+### You must:
 - Always consult a qualified healthcare professional before making dietary changes
 - Seek immediate medical attention in case of a medical emergency
 - Never disregard professional medical advice based on App content
 - Inform your doctor if you are using the App to manage a health condition
 
-**Limitations:**
+### Limitations:
 - Nutritional data may not be accurate or suitable for your individual needs
 - The App is not designed for medical diagnosis or treatment planning
 - Users with dietary restrictions, allergies, medical conditions, pregnancy, or eating disorders must seek professional guidance
+
+We disclaim all liability for any adverse health outcomes arising from use of the App.
 
 ---
 
@@ -79,6 +83,12 @@ Nibble provides nutritional information and tracking tools for general education
 - You must notify us immediately of any unauthorized access
 - We are not liable for losses arising from unauthorized account use
 
+### 5.4 Account Termination
+- You may delete your account at any time via Settings
+- We may suspend or terminate accounts that violate these Terms
+- Upon termination, your right to use the App ceases immediately
+- We will handle your data according to our Privacy Policy
+
 ---
 
 ## 6. Acceptable Use Policy
@@ -97,6 +107,15 @@ You agree NOT to use the App to:
 - Interfere with or disrupt the service or servers
 - Reverse engineer, decompile, or disassemble the App
 
+### Misuse
+- Harass, abuse, threaten, or harm other users
+- Impersonate others or misrepresent your identity
+- Upload false, misleading, or inappropriate content
+- Use the App for unauthorized commercial purposes
+- Share your account credentials with others
+
+Violation of this policy may result in immediate account termination and legal action where appropriate.
+
 ---
 
 ## 7. Intellectual Property Rights
@@ -105,13 +124,26 @@ You agree NOT to use the App to:
 - The App, including all content, features, and functionality, is owned by Intuitive HB Limited
 - Protected by UK and international copyright, trademark, and other intellectual property laws
 - You may not copy, modify, distribute, sell, or create derivative works without our express written permission
+- "Nibble" and our logo are trademarks of Intuitive HB Limited
+
+### 7.2 Your Content
+- You retain ownership of your personal content (meal logs, notes, reflections)
+- By using the App, you grant us a limited license to store, process, and display your content solely to provide the service
+- We will not use your personal content for marketing without your explicit consent
+- You represent that you have the right to upload any content you submit
+
+### 7.3 Third-Party Content
+- Food database information is sourced from third parties (including USDA)
+- We do not guarantee the accuracy or completeness of third-party data
+- Third-party content may be subject to separate terms and conditions
 
 ---
 
 ## 8. Premium Subscriptions and Payments
 
 ### 8.1 Free Features
-Basic nutrition tracking is available free of charge. We may modify free features at any time.
+- Basic nutrition tracking is available free of charge
+- We may modify free features at any time
 
 ### 8.2 Premium Subscriptions
 - Premium features require a paid subscription
@@ -125,6 +157,16 @@ Basic nutrition tracking is available free of charge. We may modify free feature
 - Cancel anytime during the trial in your App Store account settings
 - Only one free trial per user
 
+### 8.4 Refunds
+- Refunds are subject to Apple's App Store refund policy
+- We do not provide refunds for partial subscription periods
+- To request a refund, contact Apple App Store support
+
+### 8.5 Cancellation
+- Manage subscriptions in your App Store account settings
+- Cancellation takes effect at the end of the current billing period
+- You retain access to premium features until the period ends
+
 ---
 
 ## 9. User-Generated Content
@@ -133,7 +175,10 @@ Basic nutrition tracking is available free of charge. We may modify free feature
 - You must have the necessary rights to upload content
 - Do not upload content that violates these Terms or applicable laws
 - We reserve the right to remove content that violates these Terms
+- We are not liable for user-generated content
 - Report inappropriate content to: intuitive.nibble+support@gmail.com
+
+By uploading content, you warrant that it does not violate any third-party rights and complies with all applicable laws.
 
 ---
 
@@ -145,40 +190,63 @@ To the maximum extent permitted by law:
 - We make no warranties regarding accuracy, reliability, or availability of the service
 - We do not guarantee that the App will be uninterrupted, secure, or error-free
 - We do not warrant that nutritional information is accurate or suitable for your needs
+- We disclaim all implied warranties, including merchantability and fitness for a particular purpose
 
-**Note:** Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence, or for fraud or fraudulent misrepresentation.
+Nothing in these Terms excludes or limits our liability for death or personal injury caused by our negligence, or for fraud or fraudulent misrepresentation.
 
 ---
 
 ## 11. Limitation of Liability
 
-**We are not liable for:**
+To the maximum extent permitted by law:
+
+### We are not liable for:
 - Any indirect, incidental, special, or consequential damages
 - Loss of profits, revenue, data, or business opportunities
 - Damages arising from use or inability to use the App
 - Health outcomes or adverse effects from following App recommendations
 - Inaccuracies in nutritional information
+- Actions of third-party service providers
 
-**Maximum Liability:** Our total liability to you is limited to the amount you paid for the service in the 12 months preceding the claim, or £100, whichever is greater.
+### Maximum Liability:
+Our total liability to you is limited to the amount you paid for the service in the 12 months preceding the claim, or £100, whichever is greater.
+
+### Exceptions:
+Nothing in these Terms excludes or limits our liability for:
+- Death or personal injury caused by our negligence
+- Fraud or fraudulent misrepresentation
+- Any other liability that cannot be excluded or limited under UK law
 
 ---
 
 ## 12. Indemnification
 
-You agree to indemnify, defend, and hold harmless Intuitive HB Limited, its directors, officers, employees, and agents from any claims, liabilities, damages, losses, costs, and expenses arising from:
+You agree to indemnify, defend, and hold harmless Intuitive HB Limited, its directors, officers, employees, and agents from any claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising from:
 
 - Your use or misuse of the App
 - Your breach of these Terms
 - Your violation of any law or regulation
+- Your violation of any third-party rights
 - Content you upload or submit
+- Your negligence or willful misconduct
+
+We reserve the right to assume exclusive defense and control of any matter subject to indemnification.
 
 ---
 
 ## 13. Governing Law and Jurisdiction
 
-These Terms are governed by and construed in accordance with the laws of England and Wales. The courts of England and Wales have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with these Terms.
+### 13.1 Governing Law
+These Terms are governed by and construed in accordance with the laws of England and Wales.
 
-Before initiating legal proceedings, we encourage you to contact us at intuitive.nibble+legal@gmail.com to resolve disputes amicably.
+### 13.2 Jurisdiction
+The courts of England and Wales have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with these Terms or their subject matter.
+
+### 13.3 Dispute Resolution
+Before initiating legal proceedings, we encourage you to contact us at **intuitive.nibble+legal@gmail.com** to resolve disputes amicably.
+
+### 13.4 Consumer Rights
+If you are a consumer, nothing in these Terms affects your statutory rights under UK consumer protection law.
 
 ---
 
@@ -186,58 +254,83 @@ Before initiating legal proceedings, we encourage you to contact us at intuitive
 
 The App integrates with and may contain links to third-party services:
 
-**Authentication Services:**
-- Firebase Authentication (Google) - User account management
-- Apple Sign-In - Apple-based authentication
-- Google Sign-In - Google-based authentication
+### Authentication Services:
+- **Firebase Authentication (Google)** - User account management
+- **Apple Sign-In** - Apple-based authentication
+- **Google Sign-In** - Google-based authentication
 
-**Data Storage and Synchronization:**
-- Cloud Firestore (Google) - Database for storing your meals, nutrition data, and reflections
-- Firebase Cloud Storage - Secure cloud storage for app data
+### Data Storage and Synchronization:
+- **Cloud Firestore (Google)** - Database for storing your meals, nutrition data, and reflections
+- **Firebase Cloud Storage** - Secure cloud storage for app data
 
-**Payment Processing:**
-- Apple App Store - Subscription and payment processing
+### Payment Processing:
+- **Apple App Store** - Subscription and payment processing
 
-**Nutritional Data:**
-- USDA Food Database - Nutritional information for foods
+### Nutritional Data:
+- **USDA Food Database** - Nutritional information for foods
 
-**Important:**
+### Important:
 - We are not responsible for third-party services, content, or privacy practices
 - Third-party services are governed by their own terms and conditions
 - Review third-party terms before using their services
 - We are not liable for any loss or damage arising from third-party services
 
-**Firebase/Google Terms:**
+### Firebase/Google Terms:
 By using Nibble, you also agree to:
-- Firebase Terms of Service: https://firebase.google.com/terms
-- Google Privacy Policy: https://policies.google.com/privacy
+- **Firebase Terms of Service:** [https://firebase.google.com/terms](https://firebase.google.com/terms)
+- **Google Privacy Policy:** [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
-**Why We Use Firebase:**
+### Why We Use Firebase:
 Firebase provides enterprise-grade security, reliability, and GDPR compliance for your data. Your meal logs, reflections, and profile data are stored securely on Firebase servers with encryption both in transit and at rest.
 
 ---
 
 ## 15. Privacy and Data Protection
 
-Your use of the App is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal data. By using the App, you consent to our data practices as described in the Privacy Policy.
+Your use of the App is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal data.
+
+By using the App, you consent to our data practices as described in the Privacy Policy.
+
+Please read our Privacy Policy carefully to understand your rights under UK GDPR.
+
+Privacy Policy available at: Settings > Privacy Policy
 
 ---
 
 ## 16. Changes to These Terms
 
-We may modify these Terms from time to time to reflect changes in our services or business practices, legal requirements, or improvements to clarity.
+We may modify these Terms from time to time to reflect:
 
-Material changes will be communicated at least 30 days in advance through prominent notice in the App or email notification. Your continued use after changes take effect constitutes acceptance.
+- Changes in our services or business practices
+- Legal, regulatory, or security requirements
+- Improvements to clarity or user experience
+
+### How we notify you:
+- Prominent notice in the App
+- Email notification (if you've provided your email)
+- Updated "Last Updated" date at the top of these Terms
+
+Material changes will be communicated at least 30 days in advance. Your continued use after changes take effect constitutes acceptance.
+
+If you disagree with changes, you must stop using the App and delete your account.
 
 ---
 
 ## 17. Termination
 
 ### 17.1 Termination by You
-Delete your account at any time via Settings > Account > Delete Account. Your data will be handled according to our Privacy Policy.
+- Delete your account at any time via Settings > Account > Delete Account
+- Your data will be handled according to our Privacy Policy
+- Outstanding subscription charges remain payable
 
 ### 17.2 Termination by Us
-We may suspend or terminate your account immediately if you breach these Terms, engage in fraudulent or harmful activity, or if required by law.
+We may suspend or terminate your account immediately if:
+- You breach these Terms
+- You engage in fraudulent, illegal, or harmful activity
+- We are required to do so by law
+- We cease operating the service
+
+We will provide reasonable notice where practicable, except in cases of serious breach or legal requirements.
 
 ### 17.3 Effect of Termination
 Upon termination:
@@ -245,7 +338,7 @@ Upon termination:
 - We may delete your account and data (subject to legal retention requirements)
 - Provisions that should survive termination will continue (including liability limitations, indemnification, and governing law)
 
-**Data Deletion Process:**
+### Data Deletion Process:
 When you delete your account:
 1. Your Firebase Authentication account is immediately deleted
 2. All Cloud Firestore data (meals, reflections, nutrition data) is permanently deleted
@@ -257,7 +350,35 @@ This deletion is permanent and cannot be undone. Make sure to export your data b
 
 ---
 
-## 18. Contact Information
+## 18. General Provisions
+
+### 18.1 Entire Agreement
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and Intuitive HB Limited regarding the App.
+
+### 18.2 Severability
+If any provision is found to be unenforceable or invalid, the remaining provisions will continue in full force and effect.
+
+### 18.3 Waiver
+Our failure to enforce any right or provision does not constitute a waiver of that right or provision.
+
+### 18.4 Assignment
+- You may not transfer or assign these Terms or your account without our written consent
+- We may assign these Terms to any successor in connection with a merger, acquisition, or sale of assets
+
+### 18.5 No Partnership
+Nothing in these Terms creates a partnership, agency, or employment relationship between you and us.
+
+### 18.6 Force Majeure
+We are not liable for delays or failures due to circumstances beyond our reasonable control, including natural disasters, war, terrorism, strikes, or technical failures.
+
+### 18.7 Consumer Rights
+If you are a consumer in the UK, you have legal rights that cannot be excluded or limited by these Terms. Nothing in these Terms affects those rights.
+
+---
+
+## 19. Contact Information
+
+For questions, concerns, or notices regarding these Terms:
 
 - **General Support:** intuitive.nibble+support@gmail.com
 - **Legal Matters:** intuitive.nibble+legal@gmail.com
@@ -266,11 +387,18 @@ We aim to respond to all inquiries within 5 business days.
 
 ---
 
-## 19. Acknowledgment
+## 20. Acknowledgment
 
 **BY USING NIBBLE, YOU ACKNOWLEDGE THAT:**
+
 - You have read and understood these Terms of Service
 - You agree to be legally bound by these Terms
 - You meet the eligibility requirements
 - You understand the App is not medical advice
 - You accept the limitations of liability and disclaimers
+
+If you do not agree to these Terms, you must not access or use the App.
+
+---
+
+*These Terms of Service are designed to comply with UK law and Apple App Store requirements. Please review these terms regularly for updates.*
