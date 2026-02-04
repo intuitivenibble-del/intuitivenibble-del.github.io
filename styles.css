@@ -888,3 +888,128 @@ a:hover {
         padding: 0.875rem 1.75rem;
     }
 }
+
+/* ==========================================
+   ADDITIONS FOR JEKYLL LEGAL PAGES
+   Add this to the END of your existing styles.css
+   ========================================== */
+
+/* Navigation links should work as both buttons and links */
+.nav-link-mobile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white !important;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    text-align: left;
+    text-decoration: none !important;
+}
+
+.nav-link-mobile:hover,
+.nav-link-mobile:active {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 2.5rem;
+    color: white !important;
+}
+
+.nav-link-mobile:last-of-type {
+    border-bottom: none;
+}
+
+/* Ensure markdown content from Jekyll renders properly */
+main .content-section h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--secondary);
+}
+
+main .content-section h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--secondary);
+}
+
+main .content-section h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+main .content-section h4 {
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+main .content-section p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+main .content-section ul,
+main .content-section ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main .content-section li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+main .content-section blockquote {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+main .content-section blockquote p {
+    margin-bottom: 0;
+}
+
+main .content-section hr {
+    border: none;
+    border-top: 2px solid var(--border);
+    margin: 2rem 0;
+}
+
+/* Responsive for legal pages */
+@media (max-width: 768px) {
+    main .content-section h1 {
+        font-size: 1.875rem;
+    }
+    
+    main .content-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    main .content-section h3 {
+        font-size: 1.25rem;
+    }
+    
+    .nav-link-mobile {
+        padding: 1.125rem 1.5rem;
+        font-size: 0.9375rem;
+    }
+    
+    .nav-link-mobile:hover {
+        padding-left: 2rem;
+    }
+}
