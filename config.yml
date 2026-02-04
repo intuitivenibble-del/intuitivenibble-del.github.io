@@ -1,0 +1,24 @@
+# Site settings
+title: Nibble - Terms & Privacy
+description: Nutrition tracking app for intuitive eating
+baseurl: ""
+url: "https://intuitivenibble-del.github.io"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
