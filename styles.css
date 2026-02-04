@@ -1016,3 +1016,55 @@ main .content-section hr {
         padding-left: 2rem;
     }
 }
+
+/* ==========================================
+   REAL FIXES - ADD THESE AT THE VERY END OF styles.css
+   These override everything else with !important
+   ========================================== */
+
+/* FORCE REMOVE ALL BORDERS */
+.hero-section {
+    border: none !important;
+    outline: none !important;
+}
+
+.how-it-works {
+    border: none !important;
+    outline: none !important;
+}
+
+.cta-section {
+    border: none !important;
+    outline: none !important;
+}
+
+/* MAKE TEXT ACTUALLY VISIBLE */
+.step p {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.step h4 {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.cta-subtitle {
+    color: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Also check if there's a border on the title */
+.cta-title {
+    border: none !important;
+    border-bottom: none !important;
+}
+
+.section-title {
+    border: none !important;
+    border-bottom: none !important;
+}
+
+/* Remove any border from titles */
+.hero-section h1,
+.hero-section h2 {
+    border: none !important;
+    border-bottom: none !important;
+}
