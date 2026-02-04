@@ -496,9 +496,10 @@ a:hover {
 .hero-section {
     text-align: center;
     padding: 3rem 2rem;
-    background: linear-gradient(135deg, rgba(233, 70, 245, 0.3) 0%, rgba(139, 63, 245, 0.3) 100%);
+    background: linear-gradient(135deg, rgba(233, 70, 245, 0.1) 0%, rgba(139, 63, 245, 0.1) 100%);
     border-radius: 24px;
     margin-bottom: 3rem;
+    border: none;
 }
 
 .hero-title {
@@ -611,6 +612,7 @@ a:hover {
     padding: 3rem 2rem;
     border-radius: 24px;
     margin-bottom: 3rem;
+    border: none;
 }
 
 .section-title {
@@ -659,7 +661,7 @@ a:hover {
 
 .step p {
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 0;
 }
 
@@ -673,6 +675,7 @@ a:hover {
     background: linear-gradient(135deg, #E946F5 0%, #8B3FF5 100%);
     border-radius: 24px;
     color: white;
+    border: none;
 }
 
 .cta-title {
@@ -686,7 +689,7 @@ a:hover {
 
 .cta-subtitle {
     font-size: 1.125rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 2.5rem;
 }
 
