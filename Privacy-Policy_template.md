@@ -319,3 +319,6 @@ If you're unhappy with how we've handled your data, you have the right to compla
 ---
 
 *This privacy policy is designed to comply with UK GDPR and Apple App Store requirements. Users are encouraged to review this policy regularly for updates.*
+
+
+
