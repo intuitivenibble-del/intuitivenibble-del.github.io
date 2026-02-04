@@ -4,19 +4,16 @@ function showSection(sectionId) {
     sections.forEach(section => {
         section.classList.remove('active');
     });
-
     // Remove active class from all nav buttons (both desktop and old nav)
     const navButtons = document.querySelectorAll('.nav-btn, .nav-link');
     navButtons.forEach(btn => {
         btn.classList.remove('active');
     });
-
     // Show selected section
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
         selectedSection.classList.add('active');
     }
-
     // Add active class to clicked button (for header nav)
     const headerNavLinks = document.querySelectorAll('.nav-link');
     headerNavLinks.forEach(link => {
@@ -25,13 +22,11 @@ function showSection(sectionId) {
             link.classList.add('active');
         }
     });
-
     // Add active class for old nav buttons (if they exist)
     const activeButton = event?.target;
     if (activeButton && activeButton.classList.contains('nav-btn')) {
         activeButton.classList.add('active');
     }
-
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -59,8 +54,28 @@ document.addEventListener('click', function(event) {
     if (mobileMenu && mobileMenu.classList.contains('active')) {
         if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
             mobileMenu.classList.remove('active');
+            if (menuBtn) {
+                menuBtn.classList.remove('active');
+            }
         }
     }
+});
+
+// Close mobile menu when clicking a link
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuLinks = document.querySelectorAll('.nav-link-mobile');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            if (mobileMenu) {
+                mobileMenu.classList.remove('active');
+            }
+            if (menuBtn) {
+                menuBtn.classList.remove('active');
+            }
+        });
+    });
 });
 
 // Handle initial load with hash
