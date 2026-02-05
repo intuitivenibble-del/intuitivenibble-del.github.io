@@ -140,7 +140,7 @@
              ======================================== -->
         <section id="terms" class="content-section">
             <div class="last-updated">
-                <strong>Last Updated:</strong> November 27, 2024 | <strong>Effective Date:</strong> November 27, 2024
+                <strong>Last Updated:</strong> February 3, 2025 | <strong>Effective Date:</strong> February 3, 2025
             </div>
 
             <h2>Terms of Service</h2>
@@ -301,14 +301,49 @@
 
             <h3 id="tos-14">14. Third-Party Services and Links</h3>
             <p>The App integrates with and may contain links to third-party services:</p>
+
+            <h4>Authentication Services:</h4>
             <ul>
-                <li>Firebase (Google) - authentication, storage, analytics</li>
-                <li>Apple Sign-In - authentication</li>
-                <li>Google Sign-In - authentication</li>
-                <li>USDA Food Database - nutritional information</li>
-                <li>Apple App Store - payment processing</li>
+                <li><strong>Firebase Authentication (Google)</strong> - User account management</li>
+                <li><strong>Apple Sign-In</strong> - Apple-based authentication</li>
+                <li><strong>Google Sign-In</strong> - Google-based authentication</li>
             </ul>
-            <p>We are not responsible for third-party services, content, or privacy practices. Third-party services are governed by their own terms and conditions.</p>
+
+            <h4>Data Storage and Synchronization:</h4>
+            <ul>
+                <li><strong>Cloud Firestore (Google)</strong> - Database for storing your meals, nutrition data, and reflections</li>
+                <li><strong>Firebase Cloud Storage</strong> - Secure cloud storage for app data</li>
+            </ul>
+
+            <h4>Payment Processing:</h4>
+            <ul>
+                <li><strong>Apple App Store</strong> - Subscription and payment processing</li>
+            </ul>
+            
+            <h4>Nutritional Data:</h4>
+            <ul>
+                <li><strong>USDA Food Database</strong> - Nutritional information for foods</li>
+            </ul>
+
+            <h4>Important:</h4>
+            <ul>
+                <li>We are not responsible for third-party services, content, or privacy practices</li>
+                <li>Third-party services are governed by their own terms and conditions</li>
+                <li>Review third-party terms before using their services</li>
+                <li>We are not liable for any loss or damage arising from third-party services</li>
+            </ul>
+            
+            <h4>Firebase/Google Terms:</h4>
+            <p>By using Nibble, you also agree to:</p>
+            <ul>
+                <li><strong>Firebase Terms of Service:</strong> <a href="https://firebase.google.com/terms" target="_blank">https://firebase.google.com/terms</a></li>
+                <li><strong>Google Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Why We Use Firebase:</strong>
+                <p style="margin-bottom: 0;">Firebase provides enterprise-grade security, reliability, and GDPR compliance for your data. Your meal logs, reflections, and profile data are stored securely on Firebase servers with encryption both in transit and at rest.</p>
+            </div>
 
             <h3 id="tos-15">15. Privacy and Data Protection</h3>
             <p>Your use of the App is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal data. By using the App, you consent to our data practices as described in the Privacy Policy.</p>
@@ -321,7 +356,37 @@
             <h4>17.1 Termination by You</h4>
             <p>Delete your account at any time via Settings > Account > Delete Account. Your data will be handled according to our Privacy Policy.</p>
             <h4>17.2 Termination by Us</h4>
-            <p>We may suspend or terminate your account immediately if you breach these Terms, engage in fraudulent or harmful activity, or if required by law.</p>
+            <p>We may suspend or terminate your account immediately if:</p>
+            <ul>
+                <li>You breach these Terms</li>
+                <li>You engage in fraudulent, illegal, or harmful activity</li>
+                <li>We are required to do so by law</li>
+                <li>We cease operating the service</li>
+            </ul>
+            <p>We will provide reasonable notice where practicable, except in cases of serious breach or legal requirements.</p>
+            
+            <h4>17.3 Effect of Termination</h4>
+            <p>Upon termination:</p>
+            <ul>
+                <li>Your right to access and use the App ceases immediately</li>
+                <li>We may delete your account and data (subject to legal retention requirements)</li>
+                <li>Provisions that should survive termination will continue (including liability limitations, indemnification, and governing law)</li>
+            </ul>
+            
+            <h4>Data Deletion Process:</h4>
+            <p>When you delete your account:</p>
+            <ol>
+                <li>Your Firebase Authentication account is immediately deleted</li>
+                <li>All Cloud Firestore data (meals, reflections, nutrition data) is permanently deleted</li>
+                <li>Local device data is cleared from Core Data and UserDefaults</li>
+                <li>Premium subscription status is cleared</li>
+                <li>All backups are purged within 90 days</li>
+            </ol>
+            
+            <div class="warning-box">
+                <strong>⚠️ Important:</strong>
+                <p style="margin-bottom: 0;">This deletion is permanent and cannot be undone. Make sure to export your data before deletion if you wish to keep a copy.</p>
+            </div>
 
             <h3 id="tos-18">18. Contact Information</h3>
             <div class="contact-info">
@@ -347,7 +412,7 @@
              ======================================== -->
         <section id="privacy" class="content-section">
             <div class="last-updated">
-                <strong>Last Updated:</strong> November 27, 2024 | <strong>Effective Date:</strong> November 27, 2024
+                   <strong>Last Updated:</strong> February 3, 2025 | <strong>Effective Date:</strong> February 3, 2025
             </div>
 
             <h2>Privacy Policy</h2>
