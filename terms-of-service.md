@@ -5,7 +5,7 @@ last_updated: February 3, 2025
 effective_date: February 3, 2025
 permalink: /terms-of-service/
 ---
- 
+
 # Terms of Service
 
 ## 1. Agreement to Terms
@@ -388,7 +388,7 @@ We aim to respond to all inquiries within 5 business days.
 
 ## 20. Acknowledgment
 
-**BY USING NIBBLE, YOU ACKNOWLEDGE THAT:**
+**BY USING NOURICHE, YOU ACKNOWLEDGE THAT:**
 
 - You have read and understood these Terms of Service
 - You agree to be legally bound by these Terms
