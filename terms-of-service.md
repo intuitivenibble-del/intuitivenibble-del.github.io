@@ -5,7 +5,7 @@ last_updated: February 3, 2025
 effective_date: February 3, 2025
 permalink: /terms-of-service/
 ---
-
+ 
 # Terms of Service
 
 ## 1. Agreement to Terms
