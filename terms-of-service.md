@@ -12,7 +12,7 @@ permalink: /terms-of-service/
 
 These Terms of Service ("Terms") constitute a legally binding agreement between you and **Intuitive HB Limited**, a company registered in England and Wales ("we," "our," or "us").
 
-By accessing or using the Nibble mobile application ("the App"), you confirm that you accept these Terms and agree to comply with them. If you do not agree to these Terms, you must not use the App.
+By accessing or using the Nouriche mobile application ("the App"), you confirm that you accept these Terms and agree to comply with them. If you do not agree to these Terms, you must not use the App.
 
 These Terms apply to all users, including visitors who access the App without creating an account.
 
@@ -30,7 +30,7 @@ These Terms apply to all users, including visitors who access the App without cr
 
 ## 3. Description of Service
 
-Nibble provides a nutrition tracking and wellness application offering:
+Nouriche provides a nutrition tracking and wellness application offering:
 
 - Meal logging and nutrition tracking
 - Personalized wellness insights and recommendations
@@ -47,7 +47,7 @@ We reserve the right to modify, suspend, or discontinue any feature or the entir
 
 ### THE APP IS NOT MEDICAL ADVICE
 
-Nibble provides nutritional information and tracking tools for general educational and informational purposes only. The App is NOT a substitute for professional medical advice, diagnosis, or treatment.
+Nouriche provides nutritional information and tracking tools for general educational and informational purposes only. The App is NOT a substitute for professional medical advice, diagnosis, or treatment.
 
 ### You must:
 - Always consult a qualified healthcare professional before making dietary changes
@@ -122,9 +122,8 @@ Violation of this policy may result in immediate account termination and legal a
 
 ### 7.1 Our Property
 - The App, including all content, features, and functionality, is owned by Intuitive HB Limited
-- Protected by UK and international copyright, trademark, and other intellectual property laws
+- Protected by UK and international copyright and other intellectual property laws
 - You may not copy, modify, distribute, sell, or create derivative works without our express written permission
-- "Nibble" and our logo are trademarks of Intuitive HB Limited
 
 ### 7.2 Your Content
 - You retain ownership of your personal content (meal logs, notes, reflections)
@@ -276,7 +275,7 @@ The App integrates with and may contain links to third-party services:
 - We are not liable for any loss or damage arising from third-party services
 
 ### Firebase/Google Terms:
-By using Nibble, you also agree to:
+By using Nouriche, you also agree to:
 - **Firebase Terms of Service:** [https://firebase.google.com/terms](https://firebase.google.com/terms)
 - **Google Privacy Policy:** [https://policies.google.com/privacy](https://policies.google.com/privacy)
 
