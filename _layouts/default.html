@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Nouriche</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-logo">
+                <div class="logo-text">
+                    <h1><a href="{{ site.baseurl }}/" style="color: white; text-decoration: none;">Nouriche</a></h1>
+                    <p class="tagline">Moving with clarity</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="{{ site.baseurl }}/" class="nav-link-mobile">
+                <span class="nav-icon">🏠</span>
+                Home
+            </a>
+            <a href="{{ site.baseurl }}/terms-of-service/" class="nav-link-mobile">
+                <span class="nav-icon">📄</span>
+                Terms of Service
+            </a>
+            <a href="{{ site.baseurl }}/privacy-policy/" class="nav-link-mobile">
+                <span class="nav-icon">🔒</span>
+                Privacy Policy
+            </a>
+            <div class="mobile-menu-divider"></div>
+            <a href="https://apps.apple.com" class="btn-mobile" target="_blank">
+                Download App
+            </a>
+        </div>
+    </header>
+    <main style="max-width: 1200px; margin: 2rem auto; padding: 0 2rem 4rem;">
+        <div class="content-section active" style="display: block;">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> {{ page.last_updated }} | <strong>Effective Date:</strong> {{ page.effective_date }}
+            </div>
+            {{ content }}
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p><strong>Intuitive HB Limited</strong></p>
+            <p>61 Bridge Street, Kington, HR5 3DJ, United Kingdom</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">© 2025 Intuitive HB Limited. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="{{ site.baseurl }}/script.js"></script>
+</body>
+</html>
