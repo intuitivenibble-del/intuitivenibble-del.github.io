@@ -25,8 +25,7 @@ By using the App, you agree to the collection and use of information as describe
 - **Country:** United Kingdom
 - **Email:** intuitive.nibble+dataprotection@gmail.com
 - **Data Protection Contact:** intuitive.nibble+dataprotection@gmail.com
-
-> **Note:** We will register with the Information Commissioner's Office (ICO) once we begin processing personal data. Our ICO registration number will be displayed here once obtained.
+- **ICO Registration Number:** 00013492513
 
 ---
 
