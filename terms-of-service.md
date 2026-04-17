@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Terms of Service
-last_updated: February 3, 2025
-effective_date: February 3, 2025
+last_updated: April 17, 2025
+effective_date: April 17, 2025
 permalink: /terms-of-service/
 ---
 
@@ -23,8 +23,8 @@ These Terms apply to all users, including visitors who access the App without cr
 - **Company Name:** Intuitive HB Limited
 - **Registered Office:** 61 Bridge Street, Kington, HR5 3DJ
 - **Country:** United Kingdom
-- **Contact Email:** intuitive.nibble+support@gmail.com
-- **Legal Contact:** intuitive.nibble+legal@gmail.com
+- **Contact Email:** nouriche.support@gmail.com
+- **Legal Contact:** nouriche.support+legal@gmail.com
 
 ---
 
@@ -122,7 +122,7 @@ Violation of this policy may result in immediate account termination and legal a
 
 ### 7.1 Our Property
 - The App, including all content, features, and functionality, is owned by Intuitive HB Limited
-- Protected by UK and international copyright and other intellectual property laws
+- Protected by UK and international copyright, trademark, and other intellectual property laws
 - You may not copy, modify, distribute, sell, or create derivative works without our express written permission
 
 ### 7.2 Your Content
@@ -175,7 +175,7 @@ Violation of this policy may result in immediate account termination and legal a
 - Do not upload content that violates these Terms or applicable laws
 - We reserve the right to remove content that violates these Terms
 - We are not liable for user-generated content
-- Report inappropriate content to: intuitive.nibble+support@gmail.com
+- Report inappropriate content to: nouriche.support@gmail.com
 
 By uploading content, you warrant that it does not violate any third-party rights and complies with all applicable laws.
 
@@ -242,7 +242,7 @@ These Terms are governed by and construed in accordance with the laws of England
 The courts of England and Wales have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with these Terms or their subject matter.
 
 ### 13.3 Dispute Resolution
-Before initiating legal proceedings, we encourage you to contact us at **intuitive.nibble+legal@gmail.com** to resolve disputes amicably.
+Before initiating legal proceedings, we encourage you to contact us at **nouriche.support+legal@gmail.com** to resolve disputes amicably.
 
 ### 13.4 Consumer Rights
 If you are a consumer, nothing in these Terms affects your statutory rights under UK consumer protection law.
@@ -379,8 +379,8 @@ If you are a consumer in the UK, you have legal rights that cannot be excluded o
 
 For questions, concerns, or notices regarding these Terms:
 
-- **General Support:** intuitive.nibble+support@gmail.com
-- **Legal Matters:** intuitive.nibble+legal@gmail.com
+- **General Support:** nouriche.support@gmail.com
+- **Legal Matters:** nouriche.support+legal@gmail.com
 
 We aim to respond to all inquiries within 5 business days.
 
