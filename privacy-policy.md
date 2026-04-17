@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Privacy Policy
-last_updated: February 3, 2025
-effective_date: February 3, 2025
+last_updated: April 17, 2025
+effective_date: April 17, 2025
 permalink: /privacy-policy/
 ---
 
@@ -23,8 +23,8 @@ By using the App, you agree to the collection and use of information as describe
 - **Data Controller:** Intuitive HB Limited
 - **Registered Office:** 61 Bridge Street, Kington, HR5 3DJ
 - **Country:** United Kingdom
-- **Email:** intuitive.nibble+dataprotection@gmail.com
-- **Data Protection Contact:** intuitive.nibble+dataprotection@gmail.com
+- **Email:** nouriche.support+dataprotection@gmail.com
+- **Data Protection Contact:** nouriche.support+dataprotection@gmail.com
 - **ICO Registration Number:** 00013492513
 
 ---
@@ -174,7 +174,7 @@ Under UK GDPR, you have the following rights:
 - **Right to Withdraw Consent** - Withdraw consent at any time (doesn't affect prior processing)
 - **Right to Lodge a Complaint** - Complain to the ICO if you believe your rights have been violated
 
-To exercise these rights, email us at: **intuitive.nibble+privacy@gmail.com**
+To exercise these rights, email us at: **nouriche.support+privacy@gmail.com**
 
 We will respond within one month (extendable by two months for complex requests).
 
@@ -216,7 +216,7 @@ Once deleted, your data cannot be recovered. This action is permanent and irreve
 
 The App is not intended for children under 13 years of age. We do not knowingly collect personal data from children under 13.
 
-If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately at **intuitive.nibble+privacy@gmail.com**. We will promptly delete such information.
+If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately at **nouriche.support+privacy@gmail.com**. We will promptly delete such information.
 
 Users aged 13-17 should seek parental consent before using the App.
 
@@ -268,8 +268,8 @@ We recommend reviewing this policy periodically.
 
 ### For privacy questions or to exercise your rights:
 
-- **Email:** intuitive.nibble+privacy@gmail.com
-- **Data Protection Contact:** intuitive.nibble+dataprotection@gmail.com
+- **Email:** nouriche.support+privacy@gmail.com
+- **Data Protection Contact:** nouriche.support+dataprotection@gmail.com
 - **Mail:**  
   Intuitive HB Limited Privacy Team  
   61 Bridge Street, Kington, HR5 3DJ  
