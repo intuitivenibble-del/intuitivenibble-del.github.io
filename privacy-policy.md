@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Privacy Policy
-last_updated: April 17, 2025
-effective_date: April 17, 2025
+last_updated: August 29, 2026
+effective_date: August 29, 2026
 permalink: /privacy-policy/
 ---
 
@@ -41,19 +41,32 @@ We collect the following categories of personal data:
 ### 3.2 Profile and Health Data
 - Age, weight, height, gender
 - Dietary preferences and restrictions
-- Nutrition goals and targets
-- Meal logs and food intake records
+- Nutrition goals and targets, including calculated metrics such as Basal Metabolic Rate (BMR)
+- Meal logs and food intake records, including meal photos you choose to add
 - Wellness reflections and personal notes
 - Body measurements (if voluntarily provided)
+- Short daily wellness check-ins ("Body Signals"), such as sleep quality, hydration, energy, and mood, which you provide with a single tap
 
-### 3.3 Technical and Usage Data
+### 3.3 Genie AI Chat Data
+- Messages you send to Genie, our in-app AI chat assistant
+- Contextual information from your own logged data (e.g. recent meals, goals, wellness check-ins) that we include so Genie can give you relevant answers
+- Genie's replies to you
+- Conversations with Genie are stored locally on your device and are not uploaded to our servers or Firebase
+
+### 3.4 Voice and Audio Data
+- If you use voice logging, your microphone audio is captured temporarily to convert your speech into text
+- Audio is processed using Apple's Speech framework, which may transcribe on your device or send audio to Apple's servers for transcription depending on your device and settings
+- We do not retain raw audio recordings after transcription is complete
+- Voice logging is entirely optional and can be turned off at any time in Settings
+
+### 3.5 Technical and Usage Data
 - Device type and operating system version
 - App usage patterns and feature interactions
-- Error logs and diagnostic information
+- Error logs and diagnostic information (via Firebase Crashlytics)
 - IP address (automatically collected)
 - Authentication tokens (encrypted)
 
-### 3.4 Location Data (Optional)
+### 3.6 Location Data (Optional)
 - Approximate location (only if you grant permission)
 - Used solely to find nearby healthy food options
 - Can be disabled at any time in device settings
@@ -64,11 +77,11 @@ We collect the following categories of personal data:
 
 Under UK GDPR, we process your personal data based on:
 
-- **Consent** - You provide explicit consent when creating an account and using health tracking features
+- **Consent** - You provide explicit consent when creating an account and using health tracking features, voice logging, or the Genie AI chat assistant
 - **Contract** - Processing is necessary to provide the App services you've requested
 - **Legitimate Interests** - We process certain data to improve our services, prevent fraud, and ensure security, where our interests don't override your rights
 
-You may withdraw consent at any time by deleting your account or contacting us.
+You may withdraw consent at any time by deleting your account, disabling a specific feature (such as voice logging) in Settings, or contacting us.
 
 ---
 
@@ -79,6 +92,8 @@ We use your personal data for the following purposes:
 - Providing and maintaining the App's core functionality
 - Creating and managing your user account
 - Delivering personalized nutrition tracking and recommendations
+- Powering the Genie AI chat assistant and generating personalized insights, using a third-party AI inference provider (Groq) to process your messages and generate responses
+- Converting spoken meal descriptions into text when you use voice logging
 - Analyzing usage to improve features and user experience
 - Communicating important updates and service notifications
 - Detecting and preventing fraud, abuse, and security threats
@@ -96,14 +111,16 @@ We will not use your data for purposes beyond those stated without obtaining you
 We only share your data with:
 
 ### Service Providers
-- **Firebase (Google)** - authentication, cloud storage, and database services
-- **Apple** - authentication and payment processing
+- **Firebase (Google)** - authentication, cloud storage, database, and crash reporting services
+- **Apple** - authentication, payment processing, and (for voice logging) speech-to-text transcription
+- **Groq** - AI inference provider that powers the Genie chat assistant
 - **Cloud hosting providers** - data stored in secure servers
 
 ### Firebase Services Used:
 - **Firebase Authentication** - For secure user account management
 - **Cloud Firestore** - For storing your meal data, nutrition information, and wellness reflections
 - **Firebase Cloud Storage** - For app data synchronization
+- **Firebase Crashlytics** - For crash and error reporting to help us fix bugs
 
 All service providers are bound by data processing agreements compliant with UK GDPR requirements.
 
@@ -115,6 +132,19 @@ Firebase services are compliant with:
 
 For more information: [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
 
+### Groq (Genie AI Chat):
+When you use Genie, your messages and relevant context from your logged data are sent to Groq, a third-party AI inference provider, so it can generate a response.
+
+- Groq does not use your messages to train or fine-tune its AI models
+- Groq does not retain your messages by default; it may keep short-term logs (up to 30 days) solely to maintain service reliability or investigate abuse
+- Groq's servers are located in the United States
+- Your conversation history itself is stored locally on your device, not by us or by Groq
+
+For more information: [https://groq.com/privacy-policy](https://groq.com/privacy-policy)
+
+### Apple Speech Recognition:
+If you use voice logging, your audio may be sent to Apple's servers to be transcribed into text, governed by Apple's own privacy practices.
+
 ### Legal Requirements
 We may disclose data if required by law, court order, or regulatory authority, or to protect our legal rights and the safety of others.
 
@@ -125,7 +155,7 @@ In the event of a merger, acquisition, or sale of assets, your data may be trans
 
 ## 7. International Data Transfers
 
-Some of our service providers (such as Firebase/Google) may process data outside the United Kingdom. When this occurs, we ensure:
+Some of our service providers (such as Firebase/Google and Groq) may process data outside the United Kingdom. When this occurs, we ensure:
 
 - Transfers are to countries with adequate data protection (as recognized by the UK government)
 - Standard Contractual Clauses (SCCs) are in place
@@ -133,10 +163,11 @@ Some of our service providers (such as Firebase/Google) may process data outside
 
 ### Data Storage Locations:
 - Firebase/Google Cloud servers (primarily in Europe and United States)
+- Groq's servers (United States) — used only transiently to generate Genie's responses, not for long-term storage
 - All data is encrypted in transit and at rest
 - Firebase complies with EU-US Data Privacy Framework
 
-Your data may be processed in the European Economic Area (EEA) and the United States, where our cloud infrastructure providers operate secure data centers with industry-leading security standards.
+Your data may be processed in the European Economic Area (EEA) and the United States, where our service providers operate secure data centers with industry-leading security standards.
 
 ---
 
@@ -146,7 +177,7 @@ We implement robust security measures to protect your personal data:
 
 ### Technical Measures
 - AES-256 encryption for sensitive data at rest
-- TLS 1.3 encryption for all data in transit
+- TLS 1.3 encryption for all data in transit, including messages sent to Groq for the Genie chat assistant
 - Secure credential storage in iOS Keychain
 - Multi-factor authentication options
 - Regular security audits and vulnerability assessments
@@ -188,6 +219,8 @@ We retain personal data only as long as necessary:
 - **Inactive Accounts** - Data may be deleted after 24 months of inactivity (you'll receive advance notice)
 - **Deleted Accounts** - Data permanently deleted within 30 days of deletion request
 - **Backup Systems** - Data removed from backups within 90 days
+- **Genie Conversations** - Stored only on your own device; deleted when you clear the conversation or delete the App
+- **Groq Processing Logs** - Not retained by Groq by default; may be held for up to 30 days solely for service reliability or abuse prevention
 - **Legal Obligations** - Some data may be retained longer if required by law (e.g., financial records for 6 years)
 
 You can request deletion of your data at any time by contacting us or deleting your account in Settings.
@@ -196,11 +229,11 @@ You can request deletion of your data at any time by contacting us or deleting y
 When you delete your account, the following data is permanently removed:
 
 - Firebase Authentication account
-- All meal logs and food entries (Cloud Firestore)
-- Wellness reflections and personal notes
+- All meal logs and food entries, including meal photos (Cloud Firestore / Firebase Cloud Storage)
+- Wellness reflections, Body Signals check-ins, and personal notes
 - User profile and preferences
 - Nutrition goals and progress data
-- Local device storage data (Core Data, UserDefaults)
+- Local device storage data (Core Data, UserDefaults), including your Genie conversation history
 
 ### Deletion Timeline:
 - **Cloud data (Firebase/Firestore):** Immediately upon confirmation
@@ -222,7 +255,7 @@ Users aged 13-17 should seek parental consent before using the App.
 
 ---
 
-## 12. Cookies and Tracking Technologies
+## 12. Cookies, Tracking Technologies, and App Tracking Transparency
 
 We use the following technologies:
 
@@ -233,19 +266,24 @@ We use the following technologies:
 ### Analytics
 - Crash reporting (to identify and fix bugs)
 
-We do not use cookies or trackers for advertising or marketing purposes.
+### We Do Not Track You Across Apps or Websites
+We do not use advertising identifiers (such as the IDFA), advertising SDKs, or any third-party tracking or analytics tools that link your data with other companies' data for advertising purposes. Because we do not engage in this kind of "tracking" as defined by Apple, the App does not display an App Tracking Transparency (ATT) permission prompt — there is nothing to opt in or out of.
+
+We do not use cookies or trackers for advertising or marketing purposes, and we do not sell or share your data with data brokers or advertising networks.
 
 ---
 
-## 13. Automated Decision-Making
+## 13. Automated Decision-Making and AI Features
 
-The App uses algorithms to provide personalized nutrition recommendations and insights. These are suggestions only and do not constitute:
+The App uses algorithms — including Genie, our AI chat assistant, which is powered by a third-party AI model provided by Groq — to provide personalized nutrition recommendations, wellness insights, and conversational responses.
 
-- Medical advice or diagnosis
+These are suggestions and observations only and do not constitute:
+
+- Medical advice, diagnosis, or treatment
 - Legally binding decisions
 - Decisions that significantly affect your rights
 
-You are always free to ignore recommendations. The App does not make automated decisions that have legal or similarly significant effects on you.
+Genie may occasionally produce inaccurate or incomplete responses, as is a known limitation of AI language models. You are always free to ignore any recommendation or observation from Genie or the App. The App does not make automated decisions that have legal or similarly significant effects on you, and Genie is designed to encourage you to speak with a qualified healthcare professional rather than to replace one.
 
 ---
 
@@ -270,9 +308,9 @@ We recommend reviewing this policy periodically.
 
 - **Email:** nouriche.support+privacy@gmail.com
 - **Data Protection Contact:** nouriche.support+dataprotection@gmail.com
-- **Mail:**  
-  Intuitive HB Limited Privacy Team  
-  61 Bridge Street, Kington, HR5 3DJ  
+- **Mail:**
+  Intuitive HB Limited Privacy Team
+  61 Bridge Street, Kington, HR5 3DJ
   United Kingdom
 
 We aim to respond within 30 days.
@@ -283,10 +321,10 @@ If you're unhappy with how we've handled your data, you have the right to compla
 
 - **Website:** [https://ico.org.uk](https://ico.org.uk)
 - **Phone:** 0303 123 1113
-- **Mail:**  
-  Information Commissioner's Office  
-  Wycliffe House, Water Lane  
-  Wilmslow, Cheshire  
+- **Mail:**
+  Information Commissioner's Office
+  Wycliffe House, Water Lane
+  Wilmslow, Cheshire
   SK9 5AF
 
 ---
@@ -296,7 +334,7 @@ If you're unhappy with how we've handled your data, you have the right to compla
 ### Your Data Journey:
 
 **1. On Your Device (iOS)**
-- Local cache (Core Data)
+- Local cache (Core Data), including your Genie conversation history
 - Encrypted Keychain storage
 - Session data and preferences
 
@@ -306,9 +344,14 @@ If you're unhappy with how we've handled your data, you have the right to compla
 - **Location:** Europe/US data centers
 - **Backup:** Automated encrypted backups
 
-**3. When You Delete Your Account**
+**3. Momentarily, With Groq (Genie AI Chat)**
+- Your Genie messages and relevant context are sent to Groq's servers (United States) only to generate a response
+- Not retained by Groq for training; short-term reliability/abuse logs only (up to 30 days)
+- The conversation itself remains stored on your device, not with Groq or with us
+
+**4. When You Delete Your Account**
 - All cloud data deleted immediately from Firebase
-- Local data cleared from device
+- Local data, including Genie conversation history, cleared from device
 - Backups purged within 90 days
 - Authentication account permanently removed
 
